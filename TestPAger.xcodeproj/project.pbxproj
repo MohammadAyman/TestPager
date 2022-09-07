@@ -130,6 +130,8 @@
 		040949C328BFF3C800A58413 /* TestPAger */ = {
 			isa = PBXGroup;
 			children = (
+				224D13B428C51B2D00AD36BB /* TestPAger.entitlements */,
+				040949D228BFF3CB00A58413 /* Info.plist */,
 				229C61E428C91B730089106C /* Helper */,
 				229C61E328C91B320089106C /* SupportFiles */,
 				229C61E228C91B0C0089106C /* Views */,
@@ -202,9 +204,7 @@
 				224D138D28C515D700AD36BB /* GoogleService-Info.plist */,
 				040949C428BFF3C800A58413 /* AppDelegate.swift */,
 				040949C628BFF3C800A58413 /* SceneDelegate.swift */,
-				224D13B428C51B2D00AD36BB /* TestPAger.entitlements */,
 				040949CD28BFF3CB00A58413 /* Assets.xcassets */,
-				040949D228BFF3CB00A58413 /* Info.plist */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
