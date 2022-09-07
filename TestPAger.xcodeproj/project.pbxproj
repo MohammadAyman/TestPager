@@ -130,26 +130,12 @@
 		040949C328BFF3C800A58413 /* TestPAger */ = {
 			isa = PBXGroup;
 			children = (
-				224D13B428C51B2D00AD36BB /* TestPAger.entitlements */,
-				224D138D28C515D700AD36BB /* GoogleService-Info.plist */,
+				229C61E428C91B730089106C /* Helper */,
+				229C61E328C91B320089106C /* SupportFiles */,
+				229C61E228C91B0C0089106C /* Views */,
+				229C61E128C91AFF0089106C /* Models */,
+				229C61E028C91ABB0089106C /* Controllers */,
 				2255E19D28C3998A00703EFF /* Fonts */,
-				040949C428BFF3C800A58413 /* AppDelegate.swift */,
-				040949C628BFF3C800A58413 /* SceneDelegate.swift */,
-				040949C828BFF3C800A58413 /* ViewController.swift */,
-				040949CA28BFF3C800A58413 /* Main.storyboard */,
-				040949DC28C0973C00A58413 /* PageViewController.swift */,
-				040949CD28BFF3CB00A58413 /* Assets.xcassets */,
-				040949CF28BFF3CB00A58413 /* LaunchScreen.storyboard */,
-				040949D228BFF3CB00A58413 /* Info.plist */,
-				040949DE28C1194800A58413 /* Extension+UIView.swift */,
-				04913E3428C154900026DA3D /* WelcomeViewController.swift */,
-				2212C53E28C23F3500ACBB11 /* WelcomeViews */,
-				2255E19E28C39A0300703EFF /* LoginViewController.swift */,
-				224D13B528C54B1700AD36BB /* VerifyPhoneViewController.swift */,
-				222D5FE028C61BE5002C93A1 /* SuccessFailureAlertVController.swift */,
-				2209B13D28C7E59600C22974 /* TabBarViewController.swift */,
-				22C5F5AD28C8D2D000DB239C /* HomeTBViewController.swift */,
-				22B31BA528C8FAEB00E2FADE /* CollectionViewCell.swift */,
 			);
 			path = TestPAger;
 			sourceTree = "<group>";
@@ -179,6 +165,132 @@
 				226DF2C728C2904C00D94DA3 /* Tajawal-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		229C61E028C91ABB0089106C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				229C61E528C91BA70089106C /* PageViewController */,
+				229C61E728C91BE00089106C /* WelcomeViewController */,
+				229C61E928C91C010089106C /* LoginViewController */,
+				229C61EA28C91C100089106C /* VerifyPhoneViewController */,
+				229C61E828C91BF60089106C /* Alert */,
+				229C61EB28C91C1C0089106C /* TabBar */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		229C61E128C91AFF0089106C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		229C61E228C91B0C0089106C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				040949CA28BFF3C800A58413 /* Main.storyboard */,
+				040949CF28BFF3CB00A58413 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		229C61E328C91B320089106C /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				224D138D28C515D700AD36BB /* GoogleService-Info.plist */,
+				040949C428BFF3C800A58413 /* AppDelegate.swift */,
+				040949C628BFF3C800A58413 /* SceneDelegate.swift */,
+				224D13B428C51B2D00AD36BB /* TestPAger.entitlements */,
+				040949CD28BFF3CB00A58413 /* Assets.xcassets */,
+				040949D228BFF3CB00A58413 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		229C61E428C91B730089106C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				040949DE28C1194800A58413 /* Extension+UIView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		229C61E528C91BA70089106C /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				229C61E628C91BC70089106C /* ViewController */,
+				040949DC28C0973C00A58413 /* PageViewController.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		229C61E628C91BC70089106C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				040949C828BFF3C800A58413 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		229C61E728C91BE00089106C /* WelcomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2212C53E28C23F3500ACBB11 /* WelcomeViews */,
+				04913E3428C154900026DA3D /* WelcomeViewController.swift */,
+			);
+			path = WelcomeViewController;
+			sourceTree = "<group>";
+		};
+		229C61E828C91BF60089106C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				222D5FE028C61BE5002C93A1 /* SuccessFailureAlertVController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		229C61E928C91C010089106C /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2255E19E28C39A0300703EFF /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		229C61EA28C91C100089106C /* VerifyPhoneViewController */ = {
+			isa = PBXGroup;
+			children = (
+				224D13B528C54B1700AD36BB /* VerifyPhoneViewController.swift */,
+			);
+			path = VerifyPhoneViewController;
+			sourceTree = "<group>";
+		};
+		229C61EB28C91C1C0089106C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				229C61EC28C91C2F0089106C /* HomeTBView */,
+				2209B13D28C7E59600C22974 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		229C61EC28C91C2F0089106C /* HomeTBView */ = {
+			isa = PBXGroup;
+			children = (
+				229C61ED28C91C580089106C /* HomeCells */,
+				22C5F5AD28C8D2D000DB239C /* HomeTBViewController.swift */,
+			);
+			path = HomeTBView;
+			sourceTree = "<group>";
+		};
+		229C61ED28C91C580089106C /* HomeCells */ = {
+			isa = PBXGroup;
+			children = (
+				22B31BA528C8FAEB00E2FADE /* CollectionViewCell.swift */,
+			);
+			path = HomeCells;
 			sourceTree = "<group>";
 		};
 		54ED7341F299417441035591 /* Pods */ = {
