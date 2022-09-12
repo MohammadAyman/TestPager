@@ -9,6 +9,7 @@ import UIKit
 import IQKeyboardManagerSwift
 import FirebaseCore
 import GoogleSignIn
+import FacebookCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,7 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Tajawal-Regular", size: 10)!], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Tajawal-Regular", size: 10)!], for: .selected)
         UITabBar.appearance().unselectedItemTintColor = UIColor.toHex(hex: "979797")
-
+        ApplicationDelegate.shared.application(
+                application,
+                didFinishLaunchingWithOptions: launchOptions)
         return true
     }
 
@@ -45,7 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, open url: URL,
                      options: [UIApplication.OpenURLOptionsKey: Any])
       -> Bool {
-      return GIDSignIn.sharedInstance.handle(url)
+      return GIDSignIn.sharedInstance.handle(url) || ApplicationDelegate.shared.application(application,open: url,
+    sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+        annotation: options[UIApplication.OpenURLOptionsKey.annotation])
     }
 
 }

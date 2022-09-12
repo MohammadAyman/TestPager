@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Use Location</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Use Camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Use Photo</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Use Contacts</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -32,6 +42,10 @@
 		<string>fbauth2</string>
 		<string>fbshareextension</string>
 	</array>
+	<key>LSMinimumSystemVersion</key>
+	<string>12</string>
+	<key>MinimumOSVersion</key>
+	<string>12</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Tajawal-Regular.ttf</string>

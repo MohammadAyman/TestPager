@@ -8,13 +8,15 @@ target 'TestPAger' do
   # Pods for TestPAger
 	pod 'MMBAlertsPickers'
 	pod 'IQKeyboardManagerSwift'
-	pod 'SkyFloatingLabelTextField'
 	pod 'GoogleSignIn'
 	pod ‘FacebookCore’
 	pod ‘FacebookLogin’
 	pod ‘FBSDKCoreKit’
 	pod ‘FBSDKLoginKit’
   pod 'FSPagerView'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
+  pod 'Firebase'
 
 
 end

@@ -26,7 +26,7 @@ class HomeTBViewController: UIViewController {
     }
     
     let imgArray = ["Group2562-1","9c42156" ,"helianth11863" , "pexelsphoto462118"]
-    let carTypeArray = [  "Maza","Nissan","Mase", "Volvo"]
+    let carTypeArray = [  "Maza","Nissan","Mase", "Volvo" , "Maza"]
     override func viewDidLoad() {
         super.viewDidLoad()
         setFSPageControl()
@@ -51,6 +51,7 @@ extension HomeTBViewController: UICollectionViewDelegate , UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionViewCell
+//        print(carTypeArray[indexPath.row])
         cell.configureCell(name: carTypeArray[indexPath.row])
         return cell
     }
@@ -75,11 +76,6 @@ extension HomeTBViewController: FSPagerViewDelegate , FSPagerViewDataSource  {
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
         cell.imageView?.image = UIImage(named:imgArray[index])
-        cell.imageView?.contentMode = .scaleAspectFill
-        cell.contentView.layer.shadowColor = UIColor.clear.cgColor
-        cell.contentView.layer.shadowRadius = 0
-        cell.contentView.layer.shadowOpacity = 0
-        cell.contentView.layer.shadowOffset = .zero
         return cell
         
     }

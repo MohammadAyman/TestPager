@@ -14,9 +14,6 @@ class VerifyPhoneViewController: UIViewController {
     @IBOutlet weak var activeCodeTxField: UITextField!
     @IBOutlet weak var timerLbl: UILabel!
     @IBOutlet weak var confirmBtn: UIButton!
-    
-    var verificationID:String?
-    var phoneNumber:String?
     var phoneNumberToLbl:String?
     var counter = 0
     var isSendAgainActive = false
@@ -85,20 +82,8 @@ extension VerifyPhoneViewController:UITextFieldDelegate {
 // MARK: - SendDataToFirebase
 extension VerifyPhoneViewController {
     func sendDataToFirebase() {
-        let credential = PhoneAuthProvider.provider().credential(
-            withVerificationID: verificationID!,
-            verificationCode: activeCodeTxField.text!
-        )
-        Auth.auth().signIn(with: credential) { authResult, error in
-            if let error = error {
-                print(error.localizedDescription)
-                if let vc = SuccessFailureAlertVController.instantiate() as? SuccessFailureAlertVController {
-                    vc.isSuccess = false
-                    self.present(vc, animated: true)
-                }
-            }else {
-                SuccessFailureAlertVController.presentRootViewController()
-            }
+        if let code = activeCodeTxField.text {
+            FirebaseLogin.shared.verifyPhoneNumber(code: code)
         }
     }
     func enableComfirmBtn (enable:Bool){

@@ -136,6 +136,16 @@ extension UIApplication {
         }
         return nil
     }
+    
+    func rootViewController()->UIViewController{
+        var topMostViewController = UIApplication.shared.sceneDelegate?.window?.rootViewController
+        while let presentedViewController = topMostViewController?.presentedViewController {
+            topMostViewController = presentedViewController
+        }
+        return topMostViewController!
+    }
+    
+    
 }
 
 extension UIColor {
