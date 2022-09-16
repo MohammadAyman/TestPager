@@ -580,6 +580,10 @@
 				DEVELOPMENT_TEAM = SFDVSK79GW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestPAger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Use Contacts";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use Location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Use Photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -611,6 +615,10 @@
 				DEVELOPMENT_TEAM = SFDVSK79GW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestPAger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Use Contacts";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use Location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Use Photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -17,6 +17,6 @@ target 'TestPAger' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'Firebase'
-
+  pod 'FirebaseMessaging'
 
 end
